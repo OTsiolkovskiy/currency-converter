@@ -41,13 +41,11 @@ export const CurrencyConverter: FC<Props> = ({ rates }) => {
 
   const handleCurrency1Change = (currency: string) => {
     setCurrency1(currency);
-    // setAmount2(convertAmount(amount1, currency, currency2));
     setAmount1(convertAmount(amount2, currency2, currency));
   }
 
   const handleCurrency2Change = (currency: string) => {
     setCurrency2(currency);
-    // setAmount1(convertAmount(amount2, currency, currency1));
     setAmount2(convertAmount(amount1, currency1, currency));
   }
 
